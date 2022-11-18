@@ -42,6 +42,7 @@ public class BoardGrid extends JPanel implements Dispatcher{
          */
         for(int i = 0; i < fieldCount; i++){
             FlatButton button = new FlatButton("-");
+            button.setRoundness(4);
             fields[i] = button;
             button.setMainAutomateVariations(new Color(150,175,150));
             int[] position = board.getCoords(i);

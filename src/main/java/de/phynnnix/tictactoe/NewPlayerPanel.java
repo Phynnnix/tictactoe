@@ -38,6 +38,7 @@ public class NewPlayerPanel extends JPanel implements Dispatcher{
         playerLabel.setPreferredSize(new Dimension(50, 10));
         nameField = new JTextField(24);
         accept = new FlatButton("Beitreten");
+        accept.setRoundness(4);
         accept.setMainAutomateVariations(new Color(233,250,233));
         /*
          * Behandelt das Klick Event. 

@@ -159,6 +159,7 @@ public class TicTacToeWindow extends JFrame implements Dispatcher{
                         dispatchMessage("New Player", name);
                     }else if(m.isAbout("Enough Player")){
                         FlatButton play = new FlatButton("Play! >>");
+                        play.setRoundness(4);
                         play.addActionListener(new ActionListener(){
                             public void actionPerformed(ActionEvent ev){
                                 dispatchMessage("Play", null);
@@ -228,6 +229,7 @@ public class TicTacToeWindow extends JFrame implements Dispatcher{
         main.add(label);
 
         FlatButton replay = new FlatButton("Neues Spiel");
+        replay.setRoundness(4);
         replay.setPreferredSize(new Dimension(100, 24));
         replay.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
